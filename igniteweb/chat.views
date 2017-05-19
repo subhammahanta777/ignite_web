@@ -1,0 +1,1174 @@
+2017-04-30 21:32:53,729 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'question'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 13, in chat_index
+    users_question = str(request.GET["question"])
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'question'"
+2017-04-30 21:34:31,376 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 14, in chat_index
+    bot_response = chat_bot.main_bot(questionid,users_question)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\chat_bot.py", line 95, in main_bot
+    answer = model(question_dict, user_query)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\chat_bot.py", line 41, in model
+    new_test = vectorizer.transform(new).toarray()  # creating a token for the new input data
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\sklearn\feature_extraction\text.py", line 893, in transform
+    _, X = self._count_vocab(raw_documents, fixed_vocab=True)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\sklearn\feature_extraction\text.py", line 762, in _count_vocab
+    for feature in analyze(doc):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\sklearn\feature_extraction\text.py", line 241, in <lambda>
+    tokenize(preprocess(self.decode(doc))), stop_words)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\sklearn\feature_extraction\text.py", line 207, in <lambda>
+    return lambda x: strip_accents(x.lower())
+AttributeError: 'NoneType' object has no attribute 'lower'
+2017-04-30 21:34:35,038 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 14, in chat_index
+    bot_response = chat_bot.main_bot(questionid,users_question)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\chat_bot.py", line 95, in main_bot
+    answer = model(question_dict, user_query)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\chat_bot.py", line 41, in model
+    new_test = vectorizer.transform(new).toarray()  # creating a token for the new input data
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\sklearn\feature_extraction\text.py", line 893, in transform
+    _, X = self._count_vocab(raw_documents, fixed_vocab=True)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\sklearn\feature_extraction\text.py", line 762, in _count_vocab
+    for feature in analyze(doc):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\sklearn\feature_extraction\text.py", line 241, in <lambda>
+    tokenize(preprocess(self.decode(doc))), stop_words)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\sklearn\feature_extraction\text.py", line 207, in <lambda>
+    return lambda x: strip_accents(x.lower())
+AttributeError: 'NoneType' object has no attribute 'lower'
+2017-04-30 21:35:41,374 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 16, in chat_index
+    logger.info({"request": request, "user_question": users_question, 'bot_response': bot_response})
+AttributeError: 'NoneType' object has no attribute 'info'
+2017-04-30 21:36:23,021 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 16, in chat_index
+    logger.info({"request": request, "user_question": users_question, 'bot_response': bot_response})
+AttributeError: 'NoneType' object has no attribute 'info'
+2017-04-30 21:38:49,273 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 16, in chat_index
+    logger.info({"request": dir(request), "user_question": users_question, 'bot_response': bot_response})
+AttributeError: 'NoneType' object has no attribute 'info'
+2017-04-30 21:40:07,838 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 16, in chat_index
+    logger.info({"request": dir(request)})
+AttributeError: 'NoneType' object has no attribute 'info'
+2017-04-30 21:40:50,681 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 16, in chat_index
+    logger.info({"request": dir(request.GET)})
+AttributeError: 'NoneType' object has no attribute 'info'
+2017-04-30 21:46:09,753 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'questionid'
+2017-04-30 21:46:12,604 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+TypeError: get() got an unexpected keyword argument 'questionid'
+2017-04-30 21:47:11,442 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 25, in get
+    logger.info(request)
+AttributeError: 'NoneType' object has no attribute 'info'
+2017-04-30 21:47:54,862 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 25, in get
+    logger.info(questionid)
+AttributeError: 'NoneType' object has no attribute 'info'
+2017-04-30 21:47:57,012 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 25, in get
+    logger.info(questionid)
+AttributeError: 'NoneType' object has no attribute 'info'
+2017-04-30 21:49:24,308 {'request': ['__class__', '__contains__', '__copy__', '__deepcopy__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_assert_mutable', '_encoding', '_getlist', '_iteritems', '_iterlists', '_itervalues', '_mutable', 'appendlist', 'clear', 'copy', 'dict', 'encoding', 'fromkeys', 'get', 'getlist', 'items', 'keys', 'lists', 'pop', 'popitem', 'setdefault', 'setlist', 'setlistdefault', 'update', 'urlencode', 'values']}
+2017-04-30 21:49:24,373 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 18, in chat_index
+    return render(request , "chat/chat_index.html", {'bot_response':bot_response ,'users_question':users_question})
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'chat_index' with no arguments not found. 1 pattern(s) tried: ['chat/(?P<questionid>[0-9]+)/$']
+2017-04-30 21:52:14,673 {'request': ['__class__', '__contains__', '__copy__', '__deepcopy__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_assert_mutable', '_encoding', '_getlist', '_iteritems', '_iterlists', '_itervalues', '_mutable', 'appendlist', 'clear', 'copy', 'dict', 'encoding', 'fromkeys', 'get', 'getlist', 'items', 'keys', 'lists', 'pop', 'popitem', 'setdefault', 'setlist', 'setlistdefault', 'update', 'urlencode', 'values']}
+2017-04-30 21:52:14,682 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 18, in chat_index
+    return render(request , "chat/chat_index.html", {'bot_response':bot_response ,'users_question':users_question})
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'chat_index' with arguments '('',)' not found. 1 pattern(s) tried: ['chat/(?P<questionid>[0-9]+)/$']
+2017-04-30 21:52:19,780 {'request': ['__class__', '__contains__', '__copy__', '__deepcopy__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_assert_mutable', '_encoding', '_getlist', '_iteritems', '_iterlists', '_itervalues', '_mutable', 'appendlist', 'clear', 'copy', 'dict', 'encoding', 'fromkeys', 'get', 'getlist', 'items', 'keys', 'lists', 'pop', 'popitem', 'setdefault', 'setlist', 'setlistdefault', 'update', 'urlencode', 'values']}
+2017-04-30 21:52:19,790 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 18, in chat_index
+    return render(request , "chat/chat_index.html", {'bot_response':bot_response ,'users_question':users_question})
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'chat_index' with arguments '('',)' not found. 1 pattern(s) tried: ['chat/(?P<questionid>[0-9]+)/$']
+2017-04-30 21:54:18,003 {'request': ['__class__', '__contains__', '__copy__', '__deepcopy__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_assert_mutable', '_encoding', '_getlist', '_iteritems', '_iterlists', '_itervalues', '_mutable', 'appendlist', 'clear', 'copy', 'dict', 'encoding', 'fromkeys', 'get', 'getlist', 'items', 'keys', 'lists', 'pop', 'popitem', 'setdefault', 'setlist', 'setlistdefault', 'update', 'urlencode', 'values']}
+2017-04-30 21:54:18,013 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 18, in chat_index
+    return render(request , "chat/chat_index.html", {'bot_response':bot_response ,'users_question':users_question})
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'chat_index' with no arguments not found. 1 pattern(s) tried: ['chat/(?P<questionid>[0-9]+)/$']
+2017-04-30 21:56:19,141 4
+2017-04-30 21:56:19,147 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view chat.views.chatIndex didn't return an HttpResponse object. It returned None instead.
+2017-04-30 21:57:37,632 4
+2017-04-30 21:57:37,684 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 27, in get
+    return render(request, self.template_name)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'chat_index' with no arguments not found. 1 pattern(s) tried: ['chat/(?P<questionid>[0-9]+)/$']
+2017-04-30 22:02:19,077 4
+2017-04-30 22:02:19,134 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 28, in get
+    return render(request, self.template_name)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'chat_response' not found. 'chat_response' is not a valid view function or pattern name.
+2017-04-30 22:03:02,698 4
+2017-04-30 22:03:02,745 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 28, in get
+    return render(request, self.template_name)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'chat_response' with no arguments not found. 1 pattern(s) tried: ['chat/(?P<questionid>[0-9]+)/resp/$']
+2017-04-30 22:06:40,720 4
+2017-04-30 22:06:40,771 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 28, in get
+    return render(request, self.template_name)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'chat_response' with keyword arguments '{'question_id': ''}' not found. 1 pattern(s) tried: ['chat/(?P<questionid>[0-9]+)/$']
+2017-04-30 22:07:29,578 4
+2017-04-30 22:07:29,588 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 28, in get
+    return render(request, self.template_name)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'chat_response' with keyword arguments '{'question': ''}' not found. 1 pattern(s) tried: ['chat/(?P<questionid>[0-9]+)/$']
+2017-04-30 22:07:48,701 4
+2017-04-30 22:07:48,714 Internal Server Error: /chat/4/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\views\generic\base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 28, in get
+    return render(request, self.template_name)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\backends\django.py", line 66, in render
+    return self.template.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 207, in render
+    return self._render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\base.py", line 957, in render_annotated
+    return self.render(context)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\template\defaulttags.py", line 458, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\urls\resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'chat_response' with no arguments not found. 1 pattern(s) tried: ['chat/(?P<questionid>[0-9]+)/$']
+2017-04-30 22:08:19,970 4
+2017-04-30 22:08:53,739 Internal Server Error: /chat/response/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: chat_index() missing 1 required positional argument: 'questionid'
+2017-04-30 22:09:56,333 {'request': ['__class__', '__contains__', '__copy__', '__deepcopy__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_assert_mutable', '_encoding', '_getlist', '_iteritems', '_iterlists', '_itervalues', '_mutable', 'appendlist', 'clear', 'copy', 'dict', 'encoding', 'fromkeys', 'get', 'getlist', 'items', 'keys', 'lists', 'pop', 'popitem', 'setdefault', 'setlist', 'setlistdefault', 'update', 'urlencode', 'values'], 'request_content': 'how to solve this question'}
+2017-04-30 22:10:40,658 4
+2017-04-30 22:10:44,911 4
+2017-04-30 22:10:50,681 4
+2017-04-30 22:10:51,581 4
+2017-04-30 22:17:27,886 Not Found: /chat/response/
+2017-04-30 22:18:39,460 Not Found: /chat/response/
+2017-04-30 22:22:44,235 Internal Server Error: /chat/response/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 17, in chat_index
+    bot_response = chat_bot.main_bot(questionid,users_question)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\chat_bot.py", line 94, in main_bot
+    question_dict = dict_11_15[question_id]
+KeyError: None
+2017-04-30 22:24:49,934 4
+2017-04-30 22:24:54,710 Internal Server Error: /chat/response/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 17, in chat_index
+    bot_response = chat_bot.main_bot(questionid,users_question)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\chat_bot.py", line 94, in main_bot
+    question_dict = dict_11_15[question_id]
+KeyError: ''
+2017-04-30 22:25:11,786 {'request': ['__class__', '__contains__', '__copy__', '__deepcopy__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_assert_mutable', '_encoding', '_getlist', '_iteritems', '_iterlists', '_itervalues', '_mutable', 'appendlist', 'clear', 'copy', 'dict', 'encoding', 'fromkeys', 'get', 'getlist', 'items', 'keys', 'lists', 'pop', 'popitem', 'setdefault', 'setlist', 'setlistdefault', 'update', 'urlencode', 'values'], 'questionid': '4', 'request_content': 'Enter your question here'}
+2017-04-30 22:25:40,300 4
+2017-04-30 22:26:18,427 4
+2017-04-30 22:26:21,455 4
+2017-04-30 22:26:38,720 {'request': ['__class__', '__contains__', '__copy__', '__deepcopy__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_assert_mutable', '_encoding', '_getlist', '_iteritems', '_iterlists', '_itervalues', '_mutable', 'appendlist', 'clear', 'copy', 'dict', 'encoding', 'fromkeys', 'get', 'getlist', 'items', 'keys', 'lists', 'pop', 'popitem', 'setdefault', 'setlist', 'setlistdefault', 'update', 'urlencode', 'values'], 'questionid': '4', 'request_content': 'what is this question'}
+2017-04-30 22:27:28,405 {'bot_reponse': 'try it yourself', 'request_content': 'how to solve this', 'request': ['__class__', '__contains__', '__copy__', '__deepcopy__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_assert_mutable', '_encoding', '_getlist', '_iteritems', '_iterlists', '_itervalues', '_mutable', 'appendlist', 'clear', 'copy', 'dict', 'encoding', 'fromkeys', 'get', 'getlist', 'items', 'keys', 'lists', 'pop', 'popitem', 'setdefault', 'setlist', 'setlistdefault', 'update', 'urlencode', 'values'], 'questionid': '4'}
+2017-04-30 22:28:13,426 4
+2017-04-30 22:31:34,347 {'questionid': '4', 'request_content': 'Enter your question here', 'bot_reponse': 'try it yourself'}
+2017-04-30 22:31:53,456 {'questionid': '4', 'request_content': 'how to solve this question', 'bot_reponse': 'try it yourself'}
+2017-05-01 10:02:15,669 4
+2017-05-01 10:02:32,861 Internal Server Error: /chat/response/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 16, in chat_index
+    user_question = data.get('question', None)
+AttributeError: 'NoneType' object has no attribute 'get'
+2017-05-01 10:04:32,323 {'bot_reponse': 'try it yourself', 'request_content': 'how to solve question no one ', 'questionid': '4'}
+2017-05-01 10:24:53,167 3
+2017-05-01 10:25:01,515 {'bot_reponse': 'try it yourself', 'request_content': 'Enter your question here', 'questionid': '3'}
+2017-05-01 12:55:43,813 4
+2017-05-01 12:57:11,171 4
+2017-05-01 12:58:59,539 4
+2017-05-01 12:59:04,722 {'bot_reponse': 'try it yourself', 'request_content': 'Enter your question here', 'questionid': '4'}
+2017-05-01 15:27:12,093 4
+2017-05-01 15:27:23,354 {'bot_reponse': 'try it yourself', 'request_content': 'how to solve question no one ', 'questionid': '4'}
+2017-05-01 15:27:59,953 4
+2017-05-02 15:21:09,432 Not Found: /favicon.ico
+2017-05-02 15:21:13,906 4
+2017-05-02 15:29:46,043 2
+2017-05-02 15:55:02,441 Not Found: /test/4/chatbot.html
+2017-05-02 15:57:28,644 Not Found: /test/4/chatbot.html
+2017-05-02 16:01:01,118 Not Found: /test/4/chatbot.html
+2017-05-02 16:08:39,008 Not Found: /test/4/script.js
+2017-05-02 16:08:39,034 Not Found: /test/4/style.css
+2017-05-02 16:08:39,254 Not Found: /test/4/style.css
+2017-05-02 16:10:23,575 Not Found: /test/4/script.js
+2017-05-02 16:10:23,585 Not Found: /test/4/style.css
+2017-05-02 16:10:23,752 Not Found: /test/4/style.css
+2017-05-02 16:16:13,541 Not Found: /test/4/js/script.js
+2017-05-02 16:16:13,563 Not Found: /test/4/css/style.css
+2017-05-02 16:16:13,802 Not Found: /test/4/css/style.css
+2017-05-02 17:11:46,198 Not Found: /test/4/script.js
+2017-05-02 17:11:46,218 Not Found: /test/4/style.css
+2017-05-02 17:11:46,475 Not Found: /test/4/style.css
+2017-05-02 17:23:15,436 4
+2017-05-02 17:23:34,425 4
+2017-05-02 17:27:42,795 4
+2017-05-02 17:29:15,060 4
+2017-05-02 17:29:19,396 {'request_content': 'Enter your question here', 'questionid': '4', 'bot_reponse': 'try it yourself'}
+2017-05-02 17:30:02,480 {'questionid': '4', 'bot_reponse': 'try it yourself', 'request_content': 'Enter your question here'}
+2017-05-02 17:56:19,656 4
+2017-05-02 17:56:21,804 {'request_content': 'Enter your question here', 'questionid': '4', 'bot_reponse': 'try it yourself'}
+2017-05-02 18:11:56,077 Forbidden (CSRF token missing or incorrect.): /chat/response/
+2017-05-02 18:12:19,206 Forbidden (CSRF token missing or incorrect.): /chat/response/
+2017-05-02 18:13:42,865 Forbidden (CSRF token missing or incorrect.): /chat/response/
+2017-05-02 18:13:59,197 Not Found: /chat
+2017-05-02 18:16:58,413 Internal Server Error: /chat/response
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\utils\deprecation.py", line 138, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\middleware\common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\middleware\common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/chat/response/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2017-05-02 18:19:12,205 Forbidden (CSRF token missing or incorrect.): /chat/response/
+2017-05-02 18:19:15,589 {'request': <WSGIRequest: GET '/chat/response/'>}
+2017-05-02 18:19:15,590 Internal Server Error: /chat/response/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 19, in chat_index
+    bot_response = chat_bot.main_bot(questionid, users_question)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\chat_bot.py", line 94, in main_bot
+    question_dict = dict_11_15[question_id]
+KeyError: None
+2017-05-02 18:21:43,652 Forbidden (CSRF token missing or incorrect.): /chat/response/
+2017-05-02 18:22:43,327 {'request': <WSGIRequest: GET '/chat/response/'>}
+2017-05-02 18:22:43,329 Internal Server Error: /chat/response/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 19, in chat_index
+    bot_response = chat_bot.main_bot(questionid, users_question)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\chat_bot.py", line 94, in main_bot
+    question_dict = dict_11_15[question_id]
+KeyError: None
+2017-05-02 18:27:48,791 4
+2017-05-02 18:28:45,113 Forbidden (CSRF token missing or incorrect.): /chat/4/
+2017-05-02 18:29:00,117 4
+2017-05-02 18:29:21,672 Forbidden (CSRF token missing or incorrect.): /chat/4/
+2017-05-02 18:29:40,835 4
+2017-05-02 18:30:28,631 {'request': <WSGIRequest: GET '/chat/response/?question=hiii&question_id=4'>}
+2017-05-02 18:30:28,644 {'questionid': '4', 'bot_reponse': "Sorry! I couldn't understand that. Be more specific", 'request_content': 'hiii'}
+2017-05-02 18:32:17,405 {'request': <WSGIRequest: GET '/chat/response/?question=how%20to%20solve%20this%20question&question_id=4'>}
+2017-05-02 18:32:17,425 {'questionid': '4', 'bot_reponse': 'try it yourself', 'request_content': 'how to solve this question'}
+2017-05-02 18:35:52,782 {'request': <WSGIRequest: GET '/chat/response/?question=okay&question_id=4'>}
+2017-05-02 18:35:52,789 {'questionid': '4', 'bot_reponse': "Sorry! I couldn't understand that. Be more specific", 'request_content': 'okay'}
+2017-05-02 18:36:10,342 {'request': <WSGIRequest: GET '/chat/response/?question=wadddap&question_id=4'>}
+2017-05-02 18:36:10,350 {'questionid': '4', 'bot_reponse': "Sorry! I couldn't understand that. Be more specific", 'request_content': 'wadddap'}
+2017-05-02 18:36:17,667 {'request': <WSGIRequest: GET '/chat/response/?question=what%20is%20question%20no%201&question_id=4'>}
+2017-05-02 18:36:17,675 {'questionid': '4', 'bot_reponse': 'it is the question number 4', 'request_content': 'what is question no 1'}
+2017-05-02 18:38:35,077 {'request': <WSGIRequest: GET '/chat/response/?question=hi%20&question_id=4'>}
+2017-05-02 18:38:35,087 {'questionid': '4', 'bot_reponse': "Sorry! I couldn't understand that. Be more specific", 'request_content': 'hi '}
+2017-05-02 18:48:08,015 {'request': <WSGIRequest: GET '/chat/response/?question=hi&question_id=%2Ftest%2F2%2F'>}
+2017-05-02 18:48:08,017 Internal Server Error: /chat/response/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 19, in chat_index
+    bot_response = chat_bot.main_bot(questionid, users_question)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\chat_bot.py", line 94, in main_bot
+    question_dict = dict_11_15[question_id]
+KeyError: '/test/2/'
+2017-05-02 18:48:19,980 {'request': <WSGIRequest: GET '/chat/response/?question=hi&question_id=%2Ftest%2F2%2F'>}
+2017-05-02 18:48:19,982 Internal Server Error: /chat/response/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 19, in chat_index
+    bot_response = chat_bot.main_bot(questionid, users_question)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\chat_bot.py", line 94, in main_bot
+    question_dict = dict_11_15[question_id]
+KeyError: '/test/2/'
+2017-05-02 18:54:21,612 {'request': <WSGIRequest: GET '/chat/response/?question=hii&question_id=%2Ftest%2F2%2F'>}
+2017-05-02 18:54:21,620 Internal Server Error: /chat/response/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 19, in chat_index
+    bot_response = chat_bot.main_bot(questionid, users_question)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\chat_bot.py", line 94, in main_bot
+    question_dict = dict_11_15[question_id]
+KeyError: '/test/2/'
+2017-05-02 18:54:34,069 {'request': <WSGIRequest: GET '/chat/response/?question=hii&question_id=%2Ftest%2F2%2F'>}
+2017-05-02 18:54:34,070 Internal Server Error: /chat/response/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 19, in chat_index
+    bot_response = chat_bot.main_bot(questionid, users_question)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\chat_bot.py", line 94, in main_bot
+    question_dict = dict_11_15[question_id]
+KeyError: '/test/2/'
+2017-05-02 18:58:33,353 {'request': <WSGIRequest: GET '/chat/response/?question=what%20is%20the%20question%20no&question_id=t'>}
+2017-05-02 18:58:33,357 Internal Server Error: /chat/response/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 19, in chat_index
+    bot_response = chat_bot.main_bot(questionid, users_question)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\chat_bot.py", line 94, in main_bot
+    question_dict = dict_11_15[question_id]
+KeyError: 't'
+2017-05-02 18:58:46,809 {'request': <WSGIRequest: GET '/chat/response/?question=what%20is%20the%20question%20no&question_id=t'>}
+2017-05-02 18:58:46,811 Internal Server Error: /chat/response/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 19, in chat_index
+    bot_response = chat_bot.main_bot(questionid, users_question)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\chat_bot.py", line 94, in main_bot
+    question_dict = dict_11_15[question_id]
+KeyError: 't'
+2017-05-02 19:00:27,475 {'request': <WSGIRequest: GET '/chat/response/?question=what%20bakjksndas%3Blasd&question_id=t'>}
+2017-05-02 19:00:27,477 Internal Server Error: /chat/response/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 19, in chat_index
+    bot_response = chat_bot.main_bot(questionid, users_question)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\chat_bot.py", line 94, in main_bot
+    question_dict = dict_11_15[question_id]
+KeyError: 't'
+2017-05-02 19:01:25,206 {'request': <WSGIRequest: GET '/chat/response/?question=what%20slkkjdlad&question_id=%2Fte'>}
+2017-05-02 19:01:25,208 Internal Server Error: /chat/response/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 19, in chat_index
+    bot_response = chat_bot.main_bot(questionid, users_question)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\chat_bot.py", line 94, in main_bot
+    question_dict = dict_11_15[question_id]
+KeyError: '/te'
+2017-05-02 19:02:13,252 {'request': <WSGIRequest: GET '/chat/response/?question=hi&question_id=3'>}
+2017-05-02 19:02:13,266 {'request_content': 'hi', 'questionid': '3', 'bot_reponse': "Sorry! I couldn't understand that. Be more specific"}
+2017-05-02 19:02:29,359 {'request': <WSGIRequest: GET '/chat/response/?question=what%20is%20the%20question%20no&question_id=3'>}
+2017-05-02 19:02:29,369 {'request_content': 'what is the question no', 'questionid': '3', 'bot_reponse': 'it is the question number 3'}
+2017-05-02 19:13:20,689 {'request': <WSGIRequest: GET '/chat/response/?question=question&question_id=3'>}
+2017-05-02 19:13:20,697 {'request_content': 'question', 'questionid': '3', 'bot_reponse': 'try it yourself'}
+2017-05-03 11:24:13,557 Not Found: /favicon.ico
+2017-05-03 11:24:28,521 {'request': <WSGIRequest: GET '/chat/response/?question=enter%20the%20question%20no&question_id=4'>}
+2017-05-03 11:24:28,678 {'bot_reponse': 'try it yourself', 'questionid': '4', 'request_content': 'enter the question no'}
+2017-05-03 11:24:44,849 {'request': <WSGIRequest: GET '/chat/response/?question=how%20to%20solve%20this%20question&question_id=4'>}
+2017-05-03 11:24:44,858 {'bot_reponse': 'try it yourself', 'questionid': '4', 'request_content': 'how to solve this question'}
+2017-05-03 11:24:50,452 {'request': <WSGIRequest: GET '/chat/response/?question=question%20no&question_id=4'>}
+2017-05-03 11:24:50,459 {'bot_reponse': 'try it yourself', 'questionid': '4', 'request_content': 'question no'}
+2017-05-03 11:24:54,005 {'request': <WSGIRequest: GET '/chat/response/?question=wow&question_id=4'>}
+2017-05-03 11:24:54,038 {'bot_reponse': "Sorry! I couldn't understand that. Be more specific", 'questionid': '4', 'request_content': 'wow'}
+2017-05-03 11:43:14,669 {'request': <WSGIRequest: GET '/chat/response/?question=hi&question_id=4'>}
+2017-05-03 11:43:14,681 {'questionid': '4', 'bot_reponse': "Sorry! I couldn't understand that. Be more specific", 'request_content': 'hi'}
+2017-05-03 11:44:53,861 {'request': <WSGIRequest: GET '/chat/response/?question=hi&question_id=4'>}
+2017-05-03 11:44:53,877 {'questionid': '4', 'time_stamp': datetime.datetime(2017, 5, 3, 11, 44, 53, 877421), 'bot_reponse': "Sorry! I couldn't understand that. Be more specific", 'request_content': 'hi'}
+2017-05-03 11:48:33,765 {'request': <WSGIRequest: GET '/chat/response/?question=hi&question_id=4'>}
+2017-05-03 11:48:33,774 {'questionid': '4', 'time_stamp': datetime.datetime(2017, 5, 3, 11, 48, 33, 774090), 'bot_reponse': "Sorry! I couldn't understand that. Be more specific", 'request_content': 'hi'}
+2017-05-03 11:50:18,247 {'request': <WSGIRequest: GET '/chat/response/?question=hi&question_id=4'>}
+2017-05-03 11:50:18,255 {'questionid': '4', 'time_stamp': datetime.datetime(2017, 5, 3, 11, 50, 18, 255880), 'bot_reponse': "Sorry! I couldn't understand that. Be more specific", 'request_content': 'hi'}
+2017-05-03 11:52:37,840 {'request': <WSGIRequest: GET '/chat/response/?question=hi%20&question_id=4'>}
+2017-05-03 11:52:37,852 {'questionid': '4', 'time_stamp': datetime.datetime(2017, 5, 3, 11, 52, 37, 852531), 'bot_reponse': "Sorry! I couldn't understand that. Be more specific", 'request_content': 'hi '}
+2017-05-03 11:52:42,133 {'request': <WSGIRequest: GET '/chat/response/?question=wah%20iss%20uppp&question_id=4'>}
+2017-05-03 11:52:42,158 {'questionid': '4', 'time_stamp': datetime.datetime(2017, 5, 3, 11, 52, 42, 158103), 'bot_reponse': "Sorry! I couldn't understand that. Be more specific", 'request_content': 'wah iss uppp'}
+2017-05-03 11:54:18,471 {'request': <WSGIRequest: GET '/chat/response/?question=help%20me%20with%20this%20question&question_id=3'>}
+2017-05-03 11:54:18,480 {'questionid': '3', 'time_stamp': datetime.datetime(2017, 5, 3, 11, 54, 18, 480272), 'bot_reponse': 'this is your answer to question no 3', 'request_content': 'help me with this question'}
+2017-05-03 13:25:54,193 {'request': <WSGIRequest: GET '/chat/response/?question=how%20to%20solve%20this%20question&question_id=4'>}
+2017-05-03 13:25:54,201 {'questionid': '4', 'time_stamp': datetime.datetime(2017, 5, 3, 13, 25, 54, 201540), 'bot_reponse': 'try it yourself', 'request_content': 'how to solve this question'}
+2017-05-03 13:26:05,825 {'request': <WSGIRequest: GET '/chat/response/?question=i%20cant&question_id=4'>}
+2017-05-03 13:26:05,831 {'questionid': '4', 'time_stamp': datetime.datetime(2017, 5, 3, 13, 26, 5, 831681), 'bot_reponse': "Sorry! I couldn't understand that. Be more specific", 'request_content': 'i cant'}
+2017-05-03 13:39:53,177 {'request': <WSGIRequest: GET '/chat/response/?question=question%20no&question_id=4'>}
+2017-05-03 13:39:53,183 {'questionid': '4', 'time_stamp': datetime.datetime(2017, 5, 3, 13, 39, 53, 183744), 'bot_reponse': 'try it yourself', 'request_content': 'question no'}
+2017-05-03 13:40:39,106 {'request': <WSGIRequest: GET '/chat/response/?question=what%20is%201&question_id=4'>}
+2017-05-03 13:40:39,114 {'questionid': '4', 'time_stamp': datetime.datetime(2017, 5, 3, 13, 40, 39, 114842), 'bot_reponse': 'it is the question number 4', 'request_content': 'what is 1'}
+2017-05-03 15:18:50,829 {'request': <WSGIRequest: GET '/chat/response/?question=what%20do%20you%20mean%20by%20random%20variable&question_id=1'>}
+2017-05-03 15:18:50,845 {'time_stamp': datetime.datetime(2017, 5, 3, 15, 18, 50, 845696), 'questionid': '1', 'bot_reponse': 'If a set of data is having all the items with equal probability of occurrence, then choosing any of the item from the set of data will give same outcome (ultimate result). In that case, any value can be selected as a random variable', 'request_content': 'what do you mean by random variable'}
+2017-05-03 15:19:24,834 {'request': <WSGIRequest: GET '/chat/response/?question=what%20is%20probability%20distribution&question_id=1'>}
+2017-05-03 15:19:24,843 {'time_stamp': datetime.datetime(2017, 5, 3, 15, 19, 24, 843114), 'questionid': '1', 'bot_reponse': 'a function of a discrete variable whose integral over any interval is the probability that the variate specified by it will lie within that interval.', 'request_content': 'what is probability distribution'}
+2017-05-03 19:05:41,919 {'request': <WSGIRequest: GET '/chat/response/?question=wat%20is%20aaap&question_id=1'>}
+2017-05-03 19:05:41,952 {'time_stamp': datetime.datetime(2017, 5, 3, 19, 5, 41, 952824), 'questionid': '1', 'bot_reponse': "Sorry! I couldn't understand that. Be more specific", 'request_content': 'wat is aaap'}
+2017-05-09 11:06:21,946 Not Found: /favicon.ico
+2017-05-09 11:06:28,996 {'request': <WSGIRequest: GET '/chat/response/?question=hiiiiii&question_id=4'>}
+2017-05-09 11:06:29,181 {'time_stamp': datetime.datetime(2017, 5, 9, 11, 6, 29, 181354), 'request_content': 'hiiiiii', 'questionid': '4', 'bot_reponse': "Sorry! I couldn't understand that. Be more specific"}
+2017-05-09 11:40:22,989 Not Found: /media/2014_1.png
+2017-05-09 11:41:42,743 Not Found: /media/2+3=
+2017-05-09 11:56:04,134 {'request': <WSGIRequest: GET '/chat/response/?question=hi&question_id=6'>}
+2017-05-09 11:56:04,139 {'bot_reponse': "Sorry! I couldn't understand that. Be more specific", 'time_stamp': datetime.datetime(2017, 5, 9, 11, 56, 4, 139159), 'questionid': '6', 'request_content': 'hi'}
+2017-05-09 11:56:17,731 {'request': <WSGIRequest: GET '/chat/response/?question=help%20with%20tree%20diagrams%20please&question_id=6'>}
+2017-05-09 11:56:17,735 {'bot_reponse': 'Tree diagram allow us to see all the possible outcomes of an event and calculate their probability. Each branch in a\xa0tree diagram\xa0represents a possible outcome. If two events are independent, the outcome of one has no effect on the outcome of the other', 'time_stamp': datetime.datetime(2017, 5, 9, 11, 56, 17, 735490), 'questionid': '6', 'request_content': 'help with tree diagrams please'}
+2017-05-10 11:18:20,493 Not Found: /favicon.ico
+2017-05-15 15:33:31,861 Not Found: /favicon.ico
+2017-05-15 16:24:05,005 Internal Server Error: /test/1/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\views.py", line 17, in details
+    return render(request , "qna/details.html", {'this_question':this_question,'next_id':next_id,'previous_id':previous_id,'total_question_count':total_question_count})
+NameError: name 'previous_id' is not defined
+2017-05-15 20:12:30,282 Internal Server Error: /test/7/check/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\views.py", line 35, in check
+    next_id = adaptive_learning.main(int(this_question.id), this_question.is_correct)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 386, in main
+    curr_level = q_level_list[question_id]
+IndexError: list index out of range
+2017-05-16 11:48:41,689 Not Found: /favicon.ico
+2017-05-16 11:53:34,474 {'request': <WSGIRequest: GET '/chat/response/?question=hi&question_id=4'>}
+2017-05-16 11:53:34,865 {'bot_reponse': "Sorry! I couldn't understand that. Be more specific", 'questionid': '4', 'request_content': 'hi', 'time_stamp': datetime.datetime(2017, 5, 16, 11, 53, 34, 865617)}
+2017-05-16 11:53:45,445 {'request': <WSGIRequest: GET '/chat/response/?question=hwo%20to%20soleve%20this%20question&question_id=4'>}
+2017-05-16 11:53:45,451 {'bot_reponse': "Sorry! I couldn't understand that. Be more specific", 'questionid': '4', 'request_content': 'hwo to soleve this question', 'time_stamp': datetime.datetime(2017, 5, 16, 11, 53, 45, 451480)}
+2017-05-16 11:53:58,562 {'request': <WSGIRequest: GET '/chat/response/?question=what%20is%20the%20question%20no&question_id=4'>}
+2017-05-16 11:53:58,567 {'bot_reponse': 'A visual representation of selecting a simple randomsample. In\xa0statistics\xa0and quantitative research methodology, a data\xa0sample\xa0is a set of data collected and/or selected from a\xa0statistical\xa0population by a defined procedure. The elements of a\xa0sample\xa0are known as\xa0sample\xa0points,\xa0sampling\xa0units or observations.', 'questionid': '4', 'request_content': 'what is the question no', 'time_stamp': datetime.datetime(2017, 5, 16, 11, 53, 58, 567479)}
+2017-05-16 12:35:15,729 Internal Server Error: /test/15/check/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\views.py", line 27, in check
+    next_id = adaptive_learning.main(int(this_question.id),this_question.is_correct)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 402, in main
+    curr_level = q_level_list[question_id]
+IndexError: list index out of range
+2017-05-16 14:12:14,625 Internal Server Error: /test/8/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\views.py", line 18, in details
+    return render(request , "qna/details.html", {'this_question':this_question,'next_id':next_id,'total_question_count':total_question_count})
+NameError: name 'next_id' is not defined
+2017-05-16 14:44:55,892 Not Found: /test/done/
+2017-05-16 17:53:30,068 Internal Server Error: /test/11/check/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 262, in choice
+    i = self._randbelow(len(seq))
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 239, in _randbelow
+    r = getrandbits(k)          # 0 <= r < 2**k
+ValueError: number of bits must be greater than zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\views.py", line 27, in check
+    next_id = adaptive_learning.main(int(this_question.id),this_question.is_correct)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 444, in main
+    select_random_question = random_q(next_level)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 390, in random_q
+    r=random.choice(list)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 264, in choice
+    raise IndexError('Cannot choose from an empty sequence')
+IndexError: Cannot choose from an empty sequence
+2017-05-16 17:53:37,462 Not Found: /test/777/
+2017-05-16 17:53:57,304 Not Found: /test/777/
+2017-05-16 17:55:17,096 Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 262, in choice
+    i = self._randbelow(len(seq))
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 239, in _randbelow
+    r = getrandbits(k)          # 0 <= r < 2**k
+ValueError: number of bits must be greater than zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\views.py", line 9, in index
+    first_question_id = adaptive_learning.main(0, 1)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 444, in main
+    select_random_question = random_q(next_level)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 390, in random_q
+    r=random.choice(list)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 264, in choice
+    raise IndexError('Cannot choose from an empty sequence')
+IndexError: Cannot choose from an empty sequence
+2017-05-16 17:55:21,519 Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 262, in choice
+    i = self._randbelow(len(seq))
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 239, in _randbelow
+    r = getrandbits(k)          # 0 <= r < 2**k
+ValueError: number of bits must be greater than zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\views.py", line 9, in index
+    first_question_id = adaptive_learning.main(0, 1)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 444, in main
+    select_random_question = random_q(next_level)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 390, in random_q
+    r=random.choice(list)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 264, in choice
+    raise IndexError('Cannot choose from an empty sequence')
+IndexError: Cannot choose from an empty sequence
+2017-05-16 17:56:25,958 Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 262, in choice
+    i = self._randbelow(len(seq))
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 239, in _randbelow
+    r = getrandbits(k)          # 0 <= r < 2**k
+ValueError: number of bits must be greater than zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\views.py", line 9, in index
+    first_question_id = adaptive_learning.main(0, 1)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 444, in main
+    select_random_question = random_q(next_level)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 390, in random_q
+    r=random.choice(list)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 264, in choice
+    raise IndexError('Cannot choose from an empty sequence')
+IndexError: Cannot choose from an empty sequence
+2017-05-17 11:56:23,238 Not Found: /favicon.ico
+2017-05-17 12:09:33,674 Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 262, in choice
+    i = self._randbelow(len(seq))
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 239, in _randbelow
+    r = getrandbits(k)          # 0 <= r < 2**k
+ValueError: number of bits must be greater than zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\views.py", line 9, in index
+    first_question_id = adaptive_learning.main(0, 1)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 445, in main
+    select_random_question = random_q(next_level)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 390, in random_q
+    r=random.choice(list)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 264, in choice
+    raise IndexError('Cannot choose from an empty sequence')
+IndexError: Cannot choose from an empty sequence
+2017-05-17 12:17:41,315 Not Found: /test/700/
+2017-05-17 12:20:11,353 Not Found: /test/700/
+2017-05-17 12:21:36,975 Not Found: /test/700/
+2017-05-17 12:23:39,925 Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 262, in choice
+    i = self._randbelow(len(seq))
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 239, in _randbelow
+    r = getrandbits(k)          # 0 <= r < 2**k
+ValueError: number of bits must be greater than zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\views.py", line 9, in index
+    first_question_id = adaptive_learning.main(0, 1)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 444, in main
+    select_random_question = random_q(next_level)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 390, in random_q
+    r=random.choice(list)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 264, in choice
+    raise IndexError('Cannot choose from an empty sequence')
+IndexError: Cannot choose from an empty sequence
+2017-05-17 12:32:10,197 Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\views.py", line 9, in index
+    first_question_id = adaptive_learning.main(0, 1)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 457, in main
+    if(sum(visited)<6):
+UnboundLocalError: local variable 'visited' referenced before assignment
+2017-05-17 12:44:55,205 Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 262, in choice
+    i = self._randbelow(len(seq))
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 239, in _randbelow
+    r = getrandbits(k)          # 0 <= r < 2**k
+ValueError: number of bits must be greater than zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\views.py", line 9, in index
+    first_question_id = adaptive_learning.main(99999, 99999)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 453, in main
+    select_random_question = random_q(next_level)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 390, in random_q
+    r=random.choice(list)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\random.py", line 264, in choice
+    raise IndexError('Cannot choose from an empty sequence')
+IndexError: Cannot choose from an empty sequence
+2017-05-17 13:07:33,887 Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\views.py", line 9, in index
+    first_question_id = adaptive_learning.main(99999, 99999)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 452, in main
+    select_random_question = random_q(next_level)
+TypeError: random_q() missing 1 required positional argument: 'visited'
+2017-05-17 13:07:37,858 Internal Server Error: /test/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\views.py", line 9, in index
+    first_question_id = adaptive_learning.main(99999, 99999)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\qna\adaptive_learning.py", line 452, in main
+    select_random_question = random_q(next_level)
+TypeError: random_q() missing 1 required positional argument: 'visited'
+2017-05-17 16:41:14,469 {'request': <WSGIRequest: GET '/chat/response/?question=help%20with%20this%20question&question_id=8'>}
+2017-05-17 16:41:14,471 Internal Server Error: /chat/response/
+Traceback (most recent call last):
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Subham\Anaconda2\envs\keras_env\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\views.py", line 21, in chat_index
+    bot_response = chat_bot.main_bot(questionid, users_question)
+  File "C:\Users\Subham\PycharmProjects\ignite_website\igniteweb\chat\chat_bot.py", line 144, in main_bot
+    question_dict = dict_11_15[question_id]
+KeyError: '8'
+2017-05-17 16:43:34,695 {'request': <WSGIRequest: GET '/chat/response/?question=hi&question_id=8'>}
+2017-05-17 16:43:34,820 {'questionid': '8', 'time_stamp': datetime.datetime(2017, 5, 17, 16, 43, 34, 820477), 'request_content': 'hi', 'bot_reponse': "Sorry! I couldn't understand that. Be more specific"}
+2017-05-18 21:08:34,660 Not Found: /favicon.ico
+2017-05-18 22:10:49,912 Not Found: /

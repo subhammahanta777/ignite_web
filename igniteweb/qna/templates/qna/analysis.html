@@ -1,0 +1,36 @@
+<h1>You have finished the exam</h1>
+
+<h2>Analysis</h2>
+<h4>Your score is:{{score}}</h4>
+
+<h4>Your strengths are:</h4>
+<ul>
+    {% for strength in strength_list%}
+    <li>
+        {{strength}}
+    </li>
+    {%endfor%}
+</ul>
+
+<h4>Your weakness are:</h4>
+<ul>
+    {% for weakness in weakness_list%}
+    <li>
+        {{weakness}}
+    </li>
+    {%endfor%}
+</ul>
+
+
+<h4>You are avarage at:</h4>
+<ul>
+    {% for medium in medium_list%}
+    <li>
+        {{medium}}
+    </li>
+    {%endfor%}
+</ul>
+
+<form action="{% url 'index'%}">
+        <input type="submit" value="Home page" />
+        </form>
